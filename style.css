@@ -1,0 +1,81 @@
+body {  
+    margin:0px; padding:0px;  
+    background-color:#131211;  
+    font-family: arial;
+    color:#4c4d4f;
+}  
+  
+#main {  
+    background:#c4c0be url(assets/bg_small.jpg) no-repeat;   
+ 
+
+}  
+
+
+#header {
+	text-align: center;
+	width: 100%;
+	padding-top:25px;
+}
+
+#countdown {
+	text-align: center;
+}
+
+#splash {
+	text-align: center;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+opacity: 0.8;
+}
+
+#signup {
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
+#community {
+	text-align: center;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+#family {
+	text-align: center;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+#generations {
+	text-align: center;
+	width: 100%;
+	float: left;
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 30px;
+	opacity: 0.8;
+}
+
+#main .container {   
+    min-height:1500px;  
+}  
+#footer {   
+    color:white;  
+    padding:40px;  
+}  
+.container {  
+    width:950px;  
+    margin:0 auto;  
+    position:relative;  
+}  
