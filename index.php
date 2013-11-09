@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">  
 <head>  
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
-    <title>Creatif</title>  
+    <title>Liberty Church Brooklyn</title>  
     <link href="style.css" rel="stylesheet" type="text/css" />  
   
 </head>  
@@ -16,7 +16,7 @@
         <div class="container">  
           
 
-            <div id="header">  
+            <div id="header" style="color:#fff;">  
               
                 <img src="assets/logo.png" />  <br/>
                 BROOKLYN <br/>
@@ -27,7 +27,7 @@
 
 
 
-            <div id="countdown" style="height:150px;">  
+            <div id="countdown" style="height:150px;color:#fff;">  
               
                 BE PART OF OURS IN...
 
