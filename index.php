@@ -52,10 +52,59 @@ Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed
             </div>  
 
 
-            <div id="signup" style="height:250px;">  
+            <div id="signup" style="height:120px; text-align:left;">  
               
-                Signup  
-              
+               <div style="float:left; width:40%;">
+                LEARN MORE. <BR/> <span style="color: #ac2324">GET CONNECTED.</span><BR/><BR/>
+                <span style="font-size:12px;" >Sign up to learn more about Liberty Church Brooklyn  </span>
+               </div>
+
+               <form action="http://irrimaker.us2.list-manage.com/subscribe/post?u=9d4d79e1e32cf61a38c32ebb3&amp;id=17e9a86ea1" 
+               method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" 
+               target="_blank" novalidate>
+
+               <div style="float:left; width:30%;">
+
+               <input style="border:1px solid #CCCCCC;padding:15px;width:85%;" type="text" name="LNAME" class="" id="mce-LNAME" value="Full Name"/>
+
+
+               <div style="width:100%; float:left; font-size:12px; padding-left:10px; padding-top:20px;">
+                <span style="width:225px; padding-top:10px; float: left;">I'd like to meet a team member for coffee. </span>
+                
+                <input type="checkbox" ame="group[17753][1]" id="mce-group[17753]-17753-0" class="css-checkbox" checked="checked"/>
+
+
+                <label for="checkboxG5" class="css-label"></label>
+                <input class="css-checkbox" style="outline:1px solid #ccc; " type="checkbox" />
+  
+               </div>
+               </div>
+
+               <div style="float:left; width:30%;">
+
+               <input style="border:1px solid #CCCCCC;padding:15px;width:85%;"  type="text" value="Email" 
+               name="EMAIL" id="mce-EMAIL" />
+
+               <div style="width:96%; float:left; font-size:12px; padding-left:0px; padding-top:10px;">
+
+                <input style=" width:100%; height: 50px; border:0px solid #ccc; background-color: #ac2324; 
+                color:#fff; font-weight:bold;" 
+                type="submit"  value="SIGN UP" /></div>
+               </div>
+
+
+
+
+
+
+
+
+
+                </form>
+
+
+
+
             </div>  
               
 
