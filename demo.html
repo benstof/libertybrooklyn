@@ -1,4 +1,82 @@
-var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="http://Libertychurchnyc.us7.list-manage.com/subscribe/post?u=09b4790780fa287fe1443681c&amp;id=8cc32b942b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<h2>Subscribe to our mailing list</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-CN1">ChildName1  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="CN1" class="required" id="mce-CN1">
+</div>
+<div class="mc-field-group">
+	<label for="mce-CN2">ChildName2 </label>
+	<input type="text" value="" name="CN2" class="" id="mce-CN2">
+</div>
+<div class="mc-field-group">
+	<label for="mce-CN3">ChildName3 </label>
+	<input type="text" value="" name="CN3" class="" id="mce-CN3">
+</div>
+<div class="mc-field-group input-group">
+    <strong>ChildGender1  <span class="asterisk">*</span>
+</strong>
+    <ul><li><input type="radio" value="Male" name="CG1" id="mce-CG1-0"><label for="mce-CG1-0">Male</label></li>
+<li><input type="radio" value="Female" name="CG1" id="mce-CG1-1"><label for="mce-CG1-1">Female</label></li>
+</ul>
+</div>
+<div class="mc-field-group input-group">
+    <strong>ChildGender2 </strong>
+    <ul><li><input type="radio" value="Male" name="CG2" id="mce-CG2-0"><label for="mce-CG2-0">Male</label></li>
+<li><input type="radio" value="Female" name="CG2" id="mce-CG2-1"><label for="mce-CG2-1">Female</label></li>
+</ul>
+</div>
+<div class="mc-field-group input-group">
+    <strong>ChildGender3 </strong>
+    <ul><li><input type="radio" value="Male" name="CG3" id="mce-CG3-0"><label for="mce-CG3-0">Male</label></li>
+<li><input type="radio" value="Female" name="CG3" id="mce-CG3-1"><label for="mce-CG3-1">Female</label></li>
+</ul>
+</div>
+<div class="mc-field-group size1of2">
+	<label for="mce-CA1">ChildAge1  <span class="asterisk">*</span>
+</label>
+	<input type="number" name="CA1" class="required" value="" id="mce-CA1">
+</div>
+<div class="mc-field-group size1of2">
+	<label for="mce-CA2">ChildAge2 </label>
+	<input type="number" name="CA2" class="" value="" id="mce-CA2">
+</div>
+<div class="mc-field-group size1of2">
+	<label for="mce-CA3">ChildAge3 </label>
+	<input type="number" name="CA3" class="" value="" id="mce-CA3">
+</div>
+<div class="mc-field-group input-group">
+    <strong>Coffee </strong>
+    <ul><li><input type="checkbox" value="1" name="group[4133][1]" id="mce-group[4133]-4133-0"><label for="mce-group[4133]-4133-0">Coffee</label></li>
+</ul>
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<script type="text/javascript">
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='CN1';ftypes[2]='text';fnames[4]='CN2';ftypes[4]='text';fnames[7]='CN3';ftypes[7]='text';fnames[3]='CG1';ftypes[3]='radio';fnames[5]='CG2';ftypes[5]='radio';fnames[6]='CG3';ftypes[6]='radio';fnames[11]='CA1';ftypes[11]='number';fnames[12]='CA2';ftypes[12]='number';fnames[13]='CA3';ftypes[13]='number';
 try {
     var jqueryLoaded=jQuery;
     jqueryLoaded=true;
@@ -62,7 +140,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://libertybrooklyn.us3.list-manage2.com/subscribe/post-json?u=13acc20a36dd21dc51d3df13b&id=5237cafe30&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://Libertychurchnyc.us7.list-manage.com/subscribe/post-json?u=09b4790780fa287fe1443681c&id=8cc32b942b&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
@@ -187,78 +265,5 @@ function mce_success_cb(resp){
     }
 }
 
-
-
-var target_date = new Date("Jan 19, 2014").getTime();
-
-// variables for time units
-var days, hours, minutes, seconds;
-
-
-
-
-
-$( document ).ready(function() {
- 
-    // Your code here.
- 
-
- $(".add").on('click', function () {
-
-   //alert($(this).parent().parent().next().attr("id"));
-
-   $(this).parent().parent().next().show();
-
-
-   return false;
-});
-
-
- $(".delete").on('click', function () {
-
-//   alert($(this).parent().parent().prev().attr("id"));
-
-   $(this).parent().parent().hide();
-
-   return false;
-});
-
-
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
- 
-    // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
- 
- 	weeks = parseInt(seconds_left / 604800);
-    seconds_left = seconds_left % 604800;
- 	//alert(seconds_left%604800);
-
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-     
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-     
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-     
-    // format countdown string + set tag value
-$('#weeks').html(weeks);
-$('#days').html(days);
-$('#hours').html(hours);
-$('#minutes').html(minutes);
-$('#seconds').html(seconds);
- 
-}, 1000);
-
-
-
-
-});
-
-
-
-
+</script>
+<!--End mc_embed_signup-->

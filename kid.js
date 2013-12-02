@@ -1,4 +1,4 @@
-var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';
+var fnames = new Array();var ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='CN1';ftypes[2]='text';fnames[3]='CA1';ftypes[3]='number';fnames[4]='CN2';ftypes[4]='text';fnames[5]='CA2';ftypes[5]='number';fnames[6]='CN3';ftypes[6]='text';fnames[7]='CA3';ftypes[7]='number';fnames[8]='CG1';ftypes[8]='radio';fnames[9]='CG2';ftypes[9]='radio';fnames[10]='CG3';ftypes[10]='radio';
 try {
     var jqueryLoaded=jQuery;
     jqueryLoaded=true;
@@ -62,7 +62,7 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://libertybrooklyn.us3.list-manage2.com/subscribe/post-json?u=13acc20a36dd21dc51d3df13b&id=5237cafe30&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://libertybrooklyn.us3.list-manage.com/subscribe/post-json?u=13acc20a36dd21dc51d3df13b&id=ba579649d4&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
@@ -82,17 +82,17 @@ function mce_init_form(){
                                             bday = true;
                                             fields[2] = {'value':1970};//trick birthdays into having years
                                         }
-                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else {
-									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
-									        } else {
-    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-	                                        }
-	                                    }
+                                        if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                            this.value = '';
+                                        } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                            this.value = '';
+                                        } else {
+                                            if (/\[day\]/.test(fields[0].name)){
+                                                this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                                           
+                                            } else {
+                                                this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                            }
+                                        }
                                     });
                             });
                         $('.phonefield-us','#mc_embed_signup').each(
@@ -107,10 +107,10 @@ function mce_init_form(){
                                 $(':hidden', this).each(
                                     function(){
                                         if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                    		this.value = '';
-									    } else {
-									        this.value = 'filled';
-	                                    }
+                                            this.value = '';
+                                        } else {
+                                            this.value = 'filled';
+                                        }
                                     });
                             });
                         return mce_validator.form();
@@ -130,7 +130,7 @@ function mce_success_cb(resp){
         $('#mce-'+resp.result+'-response').html(resp.msg);
         $('#mc-embedded-subscribe-form').each(function(){
             this.reset();
-    	});
+        });
     } else {
         var index = -1;
         var msg;
@@ -186,79 +186,3 @@ function mce_success_cb(resp){
         }
     }
 }
-
-
-
-var target_date = new Date("Jan 19, 2014").getTime();
-
-// variables for time units
-var days, hours, minutes, seconds;
-
-
-
-
-
-$( document ).ready(function() {
- 
-    // Your code here.
- 
-
- $(".add").on('click', function () {
-
-   //alert($(this).parent().parent().next().attr("id"));
-
-   $(this).parent().parent().next().show();
-
-
-   return false;
-});
-
-
- $(".delete").on('click', function () {
-
-//   alert($(this).parent().parent().prev().attr("id"));
-
-   $(this).parent().parent().hide();
-
-   return false;
-});
-
-
-// update the tag with id "countdown" every 1 second
-setInterval(function () {
- 
-    // find the amount of "seconds" between now and target
-    var current_date = new Date().getTime();
-    var seconds_left = (target_date - current_date) / 1000;
- 
- 	weeks = parseInt(seconds_left / 604800);
-    seconds_left = seconds_left % 604800;
- 	//alert(seconds_left%604800);
-
-    // do some time calculations
-    days = parseInt(seconds_left / 86400);
-    seconds_left = seconds_left % 86400;
-     
-    hours = parseInt(seconds_left / 3600);
-    seconds_left = seconds_left % 3600;
-     
-    minutes = parseInt(seconds_left / 60);
-    seconds = parseInt(seconds_left % 60);
-     
-    // format countdown string + set tag value
-$('#weeks').html(weeks);
-$('#days').html(days);
-$('#hours').html(hours);
-$('#minutes').html(minutes);
-$('#seconds').html(seconds);
- 
-}, 1000);
-
-
-
-
-});
-
-
-
-
